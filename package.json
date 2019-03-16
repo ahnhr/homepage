@@ -1,0 +1,14 @@
+{
+  "name": "beanzsoft",
+  "version": "1.0.0",
+  "description": "Beanzsoft homepage",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ahr",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
