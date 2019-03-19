@@ -11,27 +11,49 @@ const CONTACT = "/contact/contact";
 
 //historyRouter
 const ABOUT = "/about";
-const VISION = "/vision";
 const HISTORY = "/history";
-const UPLOAD = "/upload";
-const HISTORY_DETAIL = "/:id";
-const EDIT_HISTORY = "/:id/edit";
-const DELETE_HISTORY = "/:id/delete";
+const UPLOAD = "/history/upload";
+const VISION = "/history/vision";
+const HISTORY_DETAIL = "/history/:id";
+const EDIT_HISTORY = "/history/:id/edit";
+const DELETE_HISTORY = "/history/:id/delete";
+
+//policy/privacypolicy
+const PRIVACY_POLICY = "/policy/privacypolicy";
 
 const routes = {
   home: HOME,
   about: ABOUT,
   vision: VISION,
   history: HISTORY,
-  historyDetail: HISTORY_DETAIL,
+  historyDetail: id => {
+    if (id) {
+      return `/about/history/${id}`;
+    } else {
+      return HISTORY_DETAIL;
+    }
+  },
   upload: UPLOAD,
-  editHistory: EDIT_HISTORY,
-  deleteHistory: DELETE_HISTORY,
+  editHistory: id => {
+    if (id) {
+      return `/about/history/${id}/edit`;
+    } else {
+      return EDIT_HISTORY;
+    }
+  },
+  deleteHistory: id => {
+    if (id) {
+      return `/about/history/${id}/delete`;
+    } else {
+      return DELETE_HISTORY;
+    }
+  },
   aipen: AIPEN,
   beontteut: BEONTTEUT,
   outsource: OUTSOURCE,
   request: REQUEST,
-  contact: CONTACT
+  contact: CONTACT,
+  privacyPolicy: PRIVACY_POLICY
 };
 
 export default routes;

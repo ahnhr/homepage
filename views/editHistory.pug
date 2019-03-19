@@ -1,4 +1,10 @@
 extends layouts/main
 
 block content
-    p edit
+    .form-container
+        form(action=routes.editHistory(history.id), method="post")
+            input(type="text", placeholder="date", name="date", value=history.date)
+            input(type="text", placeholder="Title", name="title", value=history.title)
+            textarea(name="description", placeholder="Description")=history.description
+            input(type="submit", value="Update History")
+        a.form-container__link.form-container__link--delete(href=routes.deleteHistory(history.id)) Delete History

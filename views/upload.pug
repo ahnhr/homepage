@@ -1,4 +1,11 @@
 extends layouts/main
 
 block content
-    p upload
+    .form-container
+        form(action=`/about${routes.upload}`, method="post", enctype="multipart/form-data")
+            label(for="file") Image File
+            input(type="file", id="file", name="historyImgFile", required=true, accept="image/*")
+            input(type="text", placeholder="Date", name="date", required=true)
+            input(type="text", placeholder="Title", name="title", required=true)
+            textarea(name="description", placeholder="Description", required=true)
+            input(type="submit", value="Upload")

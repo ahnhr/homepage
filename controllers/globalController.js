@@ -1,3 +1,5 @@
+import { regExpLiteral } from "babel-types";
+
 export const home = (req, res) => res.render("home", { pageTitle: "홈" });
 export const aipen = (req, res) =>
   res.render("aipen", { pageTitle: "A.I.Pen" });
@@ -9,3 +11,5 @@ export const request = (req, res) =>
   res.render("request", { pageTitle: "프로젝트 의뢰" });
 export const contact = (req, res) =>
   res.render("contact", { pageTitle: "오시는 길" });
+export const privacyPolicy = (req, res) =>
+  res.render("privacyPolicy", { pageTitle: "개인정보처리방침" });
