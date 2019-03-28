@@ -1,0 +1,36 @@
+.vision__content-wrap {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3c3c3c;
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.vision__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.vision__content-item {
+  padding-bottom: 50px;
+}
+
+.vision__content-item span {
+  width: 220px;
+  height: 220px;
+  display: block;
+  border: 1px solid #3c3c3c;
+  border-radius: 50%;
+  line-height: 220px;
+  font-family: "GyeonggiTitleM";
+  font-size: 20px;
+  margin-bottom: 38px;
+}
+
+.vision__content-item p {
+  font-size: 1.2em;
+  line-height: 25px;
+  font-weight: bold;
+}

@@ -1,0 +1,38 @@
+extends layouts/main
+
+block content
+    .subpage__wrap
+        .aipen__content-wrap
+            .subpage__topImg
+                .aipen-container
+                    .swiper-wrapper
+                        .swiper-slide.aipenBanner1
+                        .swiper-slide.aipenBanner2
+                        .swiper-slide.aipenBanner3
+            .subpage__itemImg.aipenImg
+                img(src="/images/business/aipen_main.png")
+            .subpage__content
+                h5.subpage__content-type 자체개발
+                h4.subpage__content-title A.I PEN
+                p.subpage__info 나만의 인공지능 가정교사
+                ul.subpage__content-explain
+                    li
+                        .explain__title
+                            img(src="http://png.icons8.com/open_book/ios/40/3C3C3C")
+                            h2 단어 검색
+                        p.explain__text 문제를 풀고 A.I PEN으로 채점할 수 있습니다.<br>틀린 문제는 자동으로 오답노트가 만들어지며 문제들 중에서 원하는 해설만 골라 볼 수 있습니다.
+                    li
+                        .explain__title
+                            img(src="https://img.icons8.com/ios/40/3c3c3c/voice-recognition-scan.png")
+                            h2 음성해설
+                        p.explain__text 음성 합성 기술을 통해 사용자가 원하는 음성으로 해설을 들을 수 있습니다.
+                    li
+                        .explain__title
+                            img(src="http://png.icons8.com/search_property/ios/40/3C3C3C")
+                            h2 문제집 연동
+                        p.explain__text A.I PEN으로 빠르게 영어, 일본어, 한자 단어를 검색할 수 있습니다.<br>       기존의 타이핑 방식에서 펜을 가져다 대는 방식의 전환은 단어 검색 시간을 획기적으로 줄여줍니다.
+                    li
+                        .explain__title
+                            img(src="http://png.icons8.com/combo_chart/ios/40/3C3C3C")
+                            h2 학습지 분석
+                        p.explain__text 수집된 개개인의 학습데이터를 기반으로 사용자의 학습 상태를 분석하고 맞춤 학습 서비스를 제공합니다.

@@ -1,0 +1,100 @@
+.subpage__wrap {
+  position: relative;
+  display: block;
+  text-align: left;
+}
+.subpage__topImg {
+  width: 100%;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.subpage__topImg::before {
+  content: "";
+  width: 100%;
+  height: 700px;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.subpage__itemImg {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  margin-left: -180px;
+}
+
+.subpage__itemImg img {
+  width: 360px;
+}
+
+.itemShadow {
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.subpage__content {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(auto-fit, min-content);
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.subpage__content-type {
+  font-size: 0.83em;
+  font-family: "Noto Sans KR", sans-serif;
+  padding-bottom: 5px;
+}
+
+.subpage__content-title {
+  grid-column: 1;
+  grid-row: 2;
+
+  font-size: 2.4em;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.subpage__info {
+  grid-column: 1;
+  grid-row: 3;
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #a7a7a7;
+  font-weight: 400;
+}
+
+.subpage__info-title {
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.subpage__info li {
+  margin-bottom: 15px;
+  color: #3c3c3c;
+}
+
+.subpage__content-playStore {
+  grid-column: 1;
+  margin-top: 30px;
+}
+
+.subpage__content-playstore img {
+  position: relative;
+  left: -10px;
+  width: 180px;
+}
+
+.subpage__content-explain {
+  font-size: 0.9em;
+  grid-column: 2;
+  grid-row: 1 / span 4;
+  line-height: 24px;
+
+  font-weight: 400;
+}

@@ -1,0 +1,15 @@
+doctype html
+html
+    head
+        title #{pageTitle} | #{siteName}
+        link(rel="stylesheet", href="/static/styles.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css")
+    body
+        include ../partials/header
+        main
+            block content
+        include ../partials/footer
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+        script(src="/static/main.js")
+        script(src="https://smtpjs.com/v3/smtp.js")
+        scrpit(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.x.x/js/swiper.min.js")

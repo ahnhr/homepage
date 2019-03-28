@@ -1,0 +1,39 @@
+.history__content {
+  width: 100%;
+  max-width: 850px;
+  margin: 0 auto;
+  .subpage__name,
+  .subpage__title,
+  .history__box-date,
+  .history__text-title,
+  .history__text-info {
+    display: block;
+    margin-bottom: 15px;
+  }
+  .subpage__title {
+    margin-bottom: 50px;
+  }
+  .history__text-title {
+    font-size: 22px;
+    font-weight: 300;
+  }
+  .history__text-date {
+    font-size: 14px;
+  }
+  .history__text-info {
+    font-size: 16px;
+  }
+  img {
+    margin-bottom: 50px;
+  }
+  a {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    background-color: #373737;
+    color: #ffffff;
+    margin: 10px auto;
+    border-radius: 6px;
+  }
+}

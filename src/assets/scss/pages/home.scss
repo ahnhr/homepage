@@ -1,0 +1,36 @@
+.swiper-container {
+  width: 100%;
+  height: calc(100vh - 179px);
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: #ffffff;
+  font-size: 2.4em;
+  line-height: 50px;
+}
+
+.swiper-slide p {
+  position: relative;
+  width: 1600px;
+  margin: 0 auto;
+  padding: 0 0 0 50px;
+  font-family: "GyeonggiTitleM";
+  text-align: left;
+}
+
+.mainSlide:nth-child(1) {
+  background-image: url("/images/home/mainBanner.jpg");
+}
+
+.mainSlide:nth-of-type(2) {
+  background-image: url("/images/home/architecture-1868667_1920.jpg");
+}
+
+// .mainSlide:nth-of-type(3) {
+//   background-image: url("/images/home/road-220058.jpg");
+// }

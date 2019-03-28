@@ -1,0 +1,48 @@
+.contact__content-wrap {
+  text-transform: uppercase;
+  color: #3c3c3c;
+}
+
+.contact__content {
+  text-align: left;
+}
+
+.contact__map {
+  width: 1000px;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
+.contact__map-info {
+  width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(auto-fit, min-content);
+  text-transform: uppercase;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.contact__map-info h2 {
+  grid-column: 1;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+.contact__map-info li {
+  grid-column: 2;
+  text-transform: lowercase;
+}
+
+.contact__map-info li h3 {
+  font-size: 0.8em;
+  padding-bottom: 5px;
+}
+
+.contact__map-info li p {
+  font-size: 1em;
+  padding-bottom: 15px;
+  font-weight: 300;
+}

@@ -1,0 +1,16 @@
+@import "config/_variables.scss";
+@import "config/reset.scss";
+@import "main.scss";
+
+@import "partials/header.scss";
+@import "partials/footer.scss";
+@import "partials/business.scss";
+@import "partials/form.scss";
+
+@import "pages/home.scss";
+@import "pages/vision.scss";
+@import "pages/aipen.scss";
+@import "pages/request.scss";
+@import "pages/contact.scss";
+@import "pages/historyDetail.scss";
+@import "pages/history.scss";

@@ -5,36 +5,49 @@
   "author": "Ahr",
   "license": "ISC",
   "dependencies": {
-    "@babel/core": "^7.3.4",
     "@babel/node": "^7.2.2",
     "@babel/polyfill": "^7.4.0",
     "@babel/preset-env": "^7.3.4",
     "autoprefixer": "^9.5.0",
     "babel-loader": "^8.0.5",
     "body-parser": "^1.18.3",
+    "connect-mongo": "^2.0.3",
     "cookie-parser": "^1.4.4",
     "cross-env": "^5.2.0",
     "css-loader": "^2.1.1",
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
+    "express-session": "^1.15.6",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "helmet": "^3.16.0",
     "mongoose": "^5.4.19",
     "morgan": "^1.9.1",
     "multer": "^1.4.1",
     "node-sass": "^4.11.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^5.0.1",
     "postcss-loader": "^3.0.0",
     "pug": "^2.0.3",
     "sass-loader": "^7.1.0",
+    "swiper": "^4.5.0",
     "webpack": "^4.29.6",
     "webpack-cli": "^3.3.0"
   },
   "scripts": {
-    "dev:server": "nodemon --exec babel-node init.js --delay 2",
-    "dev:assets": "cross-env WEBPACK_ENV=development webpack -w",
-    "build:assets": "WEBPACK_ENV=production webpack"
+    "dev:server": "nodemon --exec babel-node src/init.js --delay 2 --ignore '.scss' --ignore 'static' ",
+    "dev:assets": "cd src && cross-env WEBPACK_ENV=development webpack -w",
+    "build:assets": "cd src && cross-env WEBPACK_ENV=production webpack",
+    "build:server": "babel src --out-dir build",
+    "copyAll": "xcopy .\\src\\static .\\build\\static\\ /s /y && xcopy .\\src\\images .\\build\\images /s /y && xcopy .\\src\\views .\\build\\views\\ /s /y",
+    "build": "npm run build:server && npm run build:assets && npm run copyAll",
+    "prebuild": "rd /s /q build",
+    "start": "node build/init.js"
   },
   "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "jest": "^24.5.0",
     "nodemon": "^1.18.10"
   }
 }

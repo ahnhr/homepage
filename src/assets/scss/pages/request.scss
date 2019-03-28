@@ -1,0 +1,73 @@
+.request__content-wrap {
+  max-width: 1600px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3c3c3c;
+  /* height: 758px; */
+  position: relative;
+}
+
+.request__form {
+  fieldset {
+    border: 0;
+    margin: 0 auto;
+    width: 400px;
+    margin-bottom: 100px;
+  }
+
+  legend {
+    visibility: hidden;
+  }
+
+  input {
+    width: 400px;
+    height: 50px;
+    border: 0;
+    border-bottom: 2px solid #3c3c3c;
+    padding-left: 60px;
+  }
+
+  input::placeholder {
+    color: #d0d0d0;
+  }
+
+  label {
+    position: relative;
+    left: -175px;
+    top: 32px;
+  }
+
+  #company,
+  #name,
+  #phone,
+  #email {
+    margin-bottom: 10px;
+  }
+
+  #detailLabel {
+    position: relative;
+    left: -150px;
+    top: 20px;
+  }
+
+  textarea {
+    width: 400px;
+    border: 0;
+    /* border: 2px solid #3c3c3c; */
+  }
+
+  #detail {
+    margin-top: 30px;
+    padding: 5px;
+    border: 2px solid #3c3c3c;
+  }
+
+  #submit {
+    border: 0;
+    padding-right: 60px;
+    color: #ffffff;
+    background-color: #3c3c3c;
+    margin-top: 20px;
+  }
+}

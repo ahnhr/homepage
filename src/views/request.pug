@@ -1,0 +1,21 @@
+extends layouts/main
+
+block content
+    .request__content-wrap
+        h5.subpage__name request
+        h3.subpage__title 프로젝트 의뢰
+        .request__form
+            form(id="request__form")
+                fieldset
+                    legend 프로젝트 의뢰
+                    label(for="company") 회사명
+                    input(type="text" id="company" name="company" required=true)
+                    label(for="name") 담당자
+                    input(type="text" id="name" name="name" required=true)
+                    label(for="phone") 연락처
+                    input(type="tel" id="phone" name="phone" maxlength="13" required=true)
+                    label(for="email") 이메일
+                    input(type="email" id="email" name="email" placeholder="abc@example.com" required=true)
+                    label(for="detail" id="detailLabel") 상세 의뢰 내용
+                    textarea(name="detail" cols="50" rows="8" id="detail" style="overflow-x:hidden; overflow-y:auto" required=true)
+                    input(type="submit" value="의뢰하기" id="submit" name="submit")

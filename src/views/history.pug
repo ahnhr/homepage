@@ -1,0 +1,22 @@
+extends layouts/main
+include mixins/historyBlock
+
+block content
+    .history__content-wrap
+        h5.subpage__name history
+        h3.subpage__title 주요 연혁
+        .history__container
+            .history__box
+            each history in histories
+                +historyBlock({
+                    id:history.id,
+                    date:history.date,
+                    title:history.title,
+                    description:history.description,
+                    fileUrl:`/${history.fileUrl}`         
+                })
+
+            
+            if loggedUser
+                a.uploadBtn(href=`/about${routes.upload}`) 업로드
+                a.logoutBtn(href=routes.logout) 로그아웃

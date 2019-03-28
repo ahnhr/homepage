@@ -1,0 +1,10 @@
+footer.footer
+    .footer__wrap
+        .footer__logo BEANZSOFT
+        .footer__item
+            a(href=routes.privacyPolicy) 개인정보처리방침
+        .footer__item
+            a(href=routes.request) 프로젝트 의뢰
+        .footer__copy &copy #{new Date().getFullYear()} #{siteName}
+        if loggedUser
+            a(href=routes.logout) 로그아웃

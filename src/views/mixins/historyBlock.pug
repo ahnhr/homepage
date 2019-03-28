@@ -1,0 +1,10 @@
+mixin historyBlock(history={})
+    .historyBlock
+        a(href=routes.historyDetail(history.id)) 
+            .history__box
+                h3.history__box-date=history.date
+                .history__item
+                    .history__text
+                        h1.history__text-title=history.title
+                        p.history__text-info=history.description
+                    img(src=history.fileUrl)
